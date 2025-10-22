@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"/>
+    <title>datacom_sum</title>
+
+</head>
+<body>
+    <div class="top">
+        <div class="top_img">
+            <img src="img/ministry.png" alt="">
+        </div>
+    </div>
+<!-- Navbar -->
+    <header class="navbar">
+        <div class="logo">
+            <span>Sum</span>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#">Floor ▾</a>
+                    <ul class="submenu">
+                        <li><a href="Floor3.html">Floor 3</a></li>
+                        <li><a href="Floor4.html">Floor 4</a></li>
+                        <li><a href="Floor5.html">Floor 5</a></li>
+                        <li><a href="Floor6.html">Floor 6</a></li>
+                        <li><a href="Floor7.html">Floor 7</a></li>
+                        <li><a href="Floor8.html">Floor 8</a></li>
+                        <li><a href="Floor9.html">Floor 9</a></li>
+                        <li><a href="Floor10.html">Floor 10</a></li>
+                    </ul>
+                </li>
+                <li><a href="about.html">Sum</a></li>
+                <li><a href="credit.html">Credit</a></li>
+            </ul>
+        </nav>
+    </header>
+<!-- main content about -->
+    <div class="Container_about">
+        <h2>สรุปข้อมูลระบบ และ ค่าแรง/ค่าใช้จ่ายทั้งหมด</h2>
+        <h4>แผนผังระบบเครือข่าย (Network Topology)</h4>
+        <div class="sicco">
+            <img src="img/S_cisco.jpg" alt="">
+            <!-- Summary block for "Sum" page -->
+            <div style="max-width:900px;
+                        margin:28px auto;
+                        padding:22px 28px;border-radius:8px;
+                        background:#ffffff;
+                        box-shadow:0 1px 10px rgba(0,0,0,0.06);
+                        font-family:Segoe UI, Roboto, Arial, sans-serif;
+                        color:#222;">
+                <h2 style="margin:0 0 12px 0;
+                           text-align:center;
+                           color:#083b3b;
+                           font-weight:600;">สรุปภาพรวมระบบเครือข่ายอาคารวิศวกรรมศาสตร์</h2>
+                <p style="margin:10px 0;
+                          line-height:1.6;">
+                    ระบบเครือข่ายออกแบบเป็นรูปแบบ Star Topology โดยมี Core Switch เป็นศูนย์กลาง และใช้ Fiber Optic SM 2Core เป็น Backbone หลักในการส่งสัญญาณไปยังแต่ละชั้น</p>
+                <p style="margin:10px 0;
+                          line-height:1.6;">
+                    แต่ละชั้นติดตั้ง Access Switch ภายใน ตู้ Rack 9U เพื่อกระจายสัญญาณให้กับอุปกรณ์ภายในชั้น เช่น คอมพิวเตอร์, Access Point และอุปกรณ์ไร้สาย โดยภายในตู้มีอุปกรณ์สำคัญ ได้แก่ Switch Cisco 24 Port, UPS APC On-Line 1000VA (Rack) และ PDU U9</p>
+                <p style="margin:10px 0;
+                          line-height:1.6;">
+                    ระบบยังมี Router สำหรับเชื่อมต่อกับอินเทอร์เน็ตภายนอก และ Server ที่ให้บริการระบบภายใน การออกแบบนี้ช่วยให้เครือข่ายมีความ เสถียรขยายได้ง่าย และสามารถแยกจุดผิดพลาดได้รวดเร็ว</p>
+                <p style="margin:10px 0 0 0;
+                          line-height:1.6;
+                          color:#0a566b;
+                          font-weight:600;
+                          text-align:right;">
+                    สรุป: ระบบรองรับการใช้งานพร้อมกันของผู้ใช้จำนวนมาก ครอบคลุมทั้งอาคาร และพร้อมสำหรับการขยายในอนาคต</p>
+            </div>
+        </div>
+        <!-- plot top-->
+        <div class="plot">
+            <!-- summary -->        
+                <div>
+                    <section class="summary-container">
+                    <p class="summary-text">
+                        โครงการติดตั้งระบบเครือข่ายอินเทอร์เน็ตภายในอาคารคณะวิศวกรรมศาสตร์ ถูกออกแบบและดำเนินการภายใต้หลักการสำคัญ ได้แก่ ความเสถียร ความปลอดภัย และความสามารถในการขยายระบบในอนาคต โดยในทุกชั้นของอาคารได้ติดตั้งอุปกรณ์เครือข่ายตามมาตรฐานสากลเพื่อรับประกันการเชื่อมต่อที่มีประสิทธิภาพและต่อเนื่อง</p>
+                    <p class="summary-text">
+                        ภาพรวมการติดตั้งประกอบด้วยตู้ Rack ขนาด 9U จำนวนทั้งสิ้น 17 ตู้ ซึ่งกระจายตัวเพื่อรองรับการเชื่อมต่อจาก Core Switch กลางไปยัง Access Switch แต่ละชั้น โครงข่ายหลักใช้สายไฟเบอร์ออปติกชนิด SM 2Core Flat Type เป็น Backbone ในการส่งสัญญาณระหว่างศูนย์กลางและจุดเชื่อมต่อภายในอาคาร เพื่อให้ระบบมีความเร็วและความเสถียรสูงสุดในการใช้งานจริง</p>
+                    </section>
+                </div>
+        </div>
+        <!-- table -->
+             <div class="floor__table1">
+                <table class="table-all">
+                    <tr>
+                            <th>ลำดับ</th>
+                            <th>รวมรายการอุปกรณ์ที่ติดตั้งทั้งหมด</th>
+                            <th>รวมอุปกรณ์จำนวนที่ใช้ทั้งหมด</th>
+                            <th>รวมค่าของทั้งหมด</th>
+                            <th>รวมค่าแรง/หน่วยทั้งหมด</th>
+                            <th>รวมค่าของ/ค่าแรงทั้งหมด</th>
+                            <th>หมายเหตุ</th>
+                    </tr>
+                    <tr>
+                            <td>1</td>
+                            <td class="Channel2">ติดตั้งตู้ Rack 9U (60x50x45.5cm)</td>
+                            <td>17 ตู้</td>
+                            <td>52,794</td>
+                            <td>34,000</td>
+                            <td>86,904</td>
+                            <td>ยึด-แขวน เก็บสาย</td>
+
+                    </tr>
+                    <tr>
+                            <td>2</td>
+                            <td class="Channel2">ติดตั้งสาย LAN CAT5E 100เมตร (ภายใน)</td>
+                            <td>460 เมตร</td>
+                            <td>5,927</td>
+                            <td>11,140</td>
+                            <td>17,067</td>
+                            <td><ul class="note__list">
+                                    <li>ลากสายบนฝ้าเพดาน</li>
+                                    <!-- <li>ลากหาคอมพิเตอร์อาจารย์ 5 ตัว</li> -->
+                                    <li>เก็บสายให้เรียบร้อย</li>
+                                    <!-- <li>ลากสายเข้าหาห้องต่างๆ</li>-->
+                                </ul>
+                            </td>
+                    </tr>
+                    <tr>
+                            <td>3</td>    
+                            <td class="Channel2">ติดตั้งตัว Switch Cisco 24 port</td>
+                            <td>27 ตัว</td>
+                            <td>353,700</td>
+                            <td>27,000</td>
+                            <td>317,700</td>
+                            <td>เดินไฟ,เชื่อมต่อ</td>
+                    </tr>
+                    <tr>
+                            <td>4</td>
+                            <td class="Channel2">เข้าหัว Plug RJ45 CAT5E LINK (US-1001)</td>
+                            <td>658 ชิ้น</td>
+                            <td>4,812</td>
+                            <td>29,610</td>
+                            <td>34,422</td>
+                            <td>45 หัวต่อ 1 หัว</td>
+                    </tr>
+                    <tr>
+                            <td>5</td>
+                            <td class="Channel2">ติดตั้งไฟสำรอง APC Easy UPS On-Line 1000VA Rack</td>
+                            <td>6 ตัว</td>
+                            <td>37,740</td>
+                            <td>12,000</td>
+                            <td>40,140</td>
+                            <td>ติดตั้งเข้าตู้แร็ค, ต่อสายไฟ, เชื่อมต่อระบบและเทสต์</td>
+                    </tr>
+                    <tr>
+                            <td>6</td>
+                            <td class="Channel2">ติดตั้ง Universal Rackmount PDU Universal Socket 2-25 outlets(ปลั๊กไฟ)</td>
+                            <td>6 ตัว</td>
+                            <td>18,740</td>
+                            <td>12,000</td>
+                            <td>36,940</td>
+                            <td>ติดตั้งยึด PDU เข้าตู้แร็ค, ต่อสายไฟขาเข้า,<br>ตรวจสอบโหลด และทดสอบระบบ</td>
+                    </tr>
+                    <tr>
+                            <td>7</td>
+                            <td class="Channel2">Link สายไฟเบอร์ออฟติก SM 2Core Flat Type</td>
+                            <td>1,200 เมตร</td>
+                            <td>6,000</td>
+                            <td>30,000</td>
+                            <td>36,000</td>
+                            <td>สำหรับการติดตั้งระบบเครือข่ายใน</td>
+                    </tr>
+                            <th colspan="5">รวมทั้งหมด</th>
+                            <th colspan="2">569,173</th>
+                    </tr>
+                </table>
+            </div>
+    </div>
+    <div class="wage">
+        <section class="summary-container">
+        <p class="summary-text">
+            งบประมาณรวมของการติดตั้งทั้งหมดอยู่ที่ 569,173 บาท (รวมค่าแรงและอุปกรณ์ทั้งหมด)ซึ่งถือเป็นการลงทุนที่คุ้มค่าเมื่อเทียบกับประสิทธิภาพของระบบเครือข่ายที่ได้ — ระบบนี้สามารถรองรับการใช้งานพร้อมกันของผู้ใช้หลายร้อยคนทั่วอาคาร โดยยังคงความเร็ว เสถียรภาพ และความปลอดภัยในระดับสูง</p>
+        <p class="summary-text">
+            ระบบเครือข่ายนี้จึงนับเป็นโครงสร้างพื้นฐานสำคัญของอาคารวิศวกรรมศาสตร์ ที่ไม่เพียงตอบโจทย์การใช้งานปัจจุบันเท่านั้น แต่ยังรองรับการพัฒนาเทคโนโลยีใหม่ในอนาคตได้อย่างสมบูรณ์แบบ</p>
+        </section>
+    </div>
+<!-- footer -->
+    <footer>
+        <div class="footer">
+            <p>&copy; 2025 Engineering, Department of Telecommunications.</p>
+        </div>
+    </footer>
+</body>
+</html>
